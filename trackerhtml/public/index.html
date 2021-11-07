@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <title>Tracker</title>
+</head>
+<body>
+<div class="table_responsive">
+  <h1 style="text-align: center;">Your Daily Tracker</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Sl</th>
+        <th>Image</th>
+        <th>Time</th>
+        <th>Task</th>
+   
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td><img src="b8a1309a-ba53-48c7-bca3-9c36aab2338a.jpg" alt=""></td>
+        <td>10 Am</td>
+        <td>Drink water stay hydrated</td>
+      
+        <td>
+          <span class="action_btn">
+            <a href="#" onclick="scorecard()">Completed</a>
+            <a href="#">Not Completed</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>02</td>
+        <td><img src="yoga-gettyimages-1142820079-promo.jpg" alt=""></td>
+        <td>12 Am</td>
+        <td>Yoga Time</td>
+      
+        <td>
+          <span class="action_btn">
+            <a href="#" onclick="scorecard1()">Completed</a>
+            <a href="#">Not Completed</a>
+          </span>
+        </td>
+      </tr>
+       
+
+      <tr>
+        <td>03</td>
+        <td><img src="GettyImages-652986635-3dffa4d.jpg" alt=""></td>
+        <td>2 Pm</td>
+        <td>Eat any iron rich food</td>
+      
+        <td>
+          <span class="action_btn">
+            <a href="#" onclick="scorecard2()">Completed</a>
+            <a href="#">Not Completed</a>
+          </span>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <br>
+  <p class="font-weight-bold">Score:<a id="sc">0</a></p>
+  <button type="button" onclick="clearscore()">Clear Score</button>
+  <p>enter email</p>
+  <input type="email" id="email">
+  
+  <p>To Submit Score Click below : </p>
+  <button type="button" class="btn btn-primary btn-lg btn-block" onclick="currentscore()">Submit Score</button>
+</div>
+
+</body>
+<script src="score.js"></script>
+
+
+</html>
